@@ -29,7 +29,7 @@ function App() {
     <div>
     <div className="App">
       <header className="App-form">
-        <h2>Loan Refinance Calculator</h2>
+        <h1>Loan Refinance Calculator</h1>
         <p>This doesn't calculate anything yet because I don't have the
           real formula. This is meant as a demo of the skillset I would bring to the Marketing Designer position at MotoRefi.
         </p>
@@ -69,10 +69,10 @@ function App() {
             />
         </form>
         <div className="Form-result">
-          {loading && <h2>Calculating...</h2>}
+          {loading && <h1>Calculating...</h1>}
           {result && 
             <div>
-              <h2>{result}</h2>
+              <h1>{result}</h1>
               <img src={img} alt="Gif of Finn the human and princess bubblegum."/>
             </div>
           }

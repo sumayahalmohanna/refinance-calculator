@@ -14,7 +14,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: calc(7px + 1.3vmin);
   color: #114;
   width: auto;
   margin: 0 auto;
@@ -34,11 +33,16 @@
   color: #43b8b8;
 }
 
-.App-form h2 {
+.App-form h1 {
   font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 2rem;
   margin: 10px auto;
   text-align: center;
   color: #2a3de2;
+}
+
+.App-form p {
+  font-size: 1.2rem;
 }
 
 .App-form input {

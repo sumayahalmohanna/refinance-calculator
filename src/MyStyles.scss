@@ -12,7 +12,6 @@ $footerBg: #e5ffe3;
     display: flex;
     align-items: center;
     flex-direction: $direction;
-    font-size: calc(7px + 1.3vmin);
     color: $primaryText;
 }
 
@@ -37,11 +36,15 @@ $footerBg: #e5ffe3;
         font-weight: bold;
         color: $primaryColor;
     }
-    h2 {
+    h1 {
         font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 2rem;
         margin: 10px auto;
         text-align: center;
         color: $secondaryColor;
+    }
+    p {
+        font-size: 1.2rem;;
     }
     input {
         width: 100%;
