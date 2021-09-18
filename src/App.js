@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useLocation} from 'react-router-dom';
 import './MyStyles.css';
 import img from './assets/FinnMathematical.gif';
 import ReactGA from 'react-ga';
