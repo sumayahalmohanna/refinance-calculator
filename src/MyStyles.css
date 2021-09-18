@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+}
+
+.App {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: calc(7px + 1.3vmin);
+  color: #114;
+  width: auto;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App-form {
+  max-width: 600px;
+  margin: 0 10px;
+  text-align: left;
+}
+
+.App-form label {
+  display: block;
+  font-size: medium;
+  font-weight: bold;
+  color: #43b8b8;
+}
+
+.App-form h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 10px auto;
+  text-align: center;
+  color: #2a3de2;
+}
+
+.App-form input {
+  width: 100%;
+  padding: 14px 10px;
+  margin: 10px 0;
+  border: 1px solid #43b8b8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  border-radius: 8px;
+  font-size: large;
+  color: #929dff;
+}
+
+.App-form .Form-btn {
+  background: #43b8b8;
+  color: #fafafa;
+  font-size: large;
+  font-weight: bold;
+  border: 0;
+  padding: 14px;
+  margin: 30px auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.App-form .Form-btn:hover {
+  background: #239b9b;
+}
+
+hr {
+  border: 1px solid #929dff;
+  margin: 10px auto 30px auto;
+}
+
+.Form-result {
+  height: auto;
+  text-align: center;
+}
+
+.Form-result img {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+footer {
+  color: #929dff;
+  font-size: medium;
+  width: 100%;
+  height: 10vh;
+  background-color: #e5ffe3;
+}
+
+footer p {
+  padding: 20px 10px;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2a3de2;
+}
+/*# sourceMappingURL=MyStyles.css.map */

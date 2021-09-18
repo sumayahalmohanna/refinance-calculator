@@ -1,0 +1,104 @@
+$primaryColor: #43b8b8;
+$primaryShade: #239b9b;
+$secondaryColor: #2a3de2;
+$secondaryShade: #929dff;
+$primaryBg: #fafafa;
+$primaryText: #114;
+$secondaryText: #fafafa;
+$footerBg: #e5ffe3;
+
+@mixin flexCenter($direction) {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: $direction;
+    font-size: calc(7px + 1.3vmin);
+    color: $primaryText;
+}
+
+* {
+    margin: 0;
+}
+
+.App {
+    @include flexCenter(column);
+    width: auto;
+    margin: 0 auto;
+    font-family:  'Roboto', sans-serif;
+}
+
+.App-form {
+    max-width: 600px;
+    margin: 0 10px;
+    text-align: left;
+    label {
+        display: block;
+        font-size: medium;
+        font-weight: bold;
+        color: $primaryColor;
+    }
+    h2 {
+        font-family: 'IBM Plex Sans', sans-serif;
+        margin: 10px auto;
+        text-align: center;
+        color: $secondaryColor;
+    }
+    input {
+        width: 100%;
+        padding: 14px 10px;
+        margin: 10px 0;
+        border: 1px solid $primaryColor;
+        box-sizing: border-box;
+        display: block;        
+        border-radius: 8px;
+        font-size: large;
+        color: $secondaryShade;
+    }
+    .Form-btn {
+        background: $primaryColor;
+        color: $secondaryText;
+        font-size: large;
+        font-weight: bold;
+        border: 0;
+        padding: 14px;
+        margin: 30px auto;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover {
+            background: $primaryShade;
+        }
+      }
+  }
+
+  hr {
+      border: 1px solid $secondaryShade;
+      margin: 10px auto 30px auto;
+  }
+
+  .Form-result {
+      height: auto;
+      text-align: center;
+      img {
+          width: auto;
+          height: auto;
+          max-width: 300px;
+          margin-bottom: 10px;
+          border-radius: 8px;
+      }
+  }
+
+  footer {
+      color: $secondaryShade;
+      font-size: medium;
+      width: 100%;
+      height: 10vh;
+      background-color: $footerBg;
+      p {
+          padding: 20px 10px;
+      }
+      a {
+          text-decoration: none;
+          font-weight: bold;
+          color: $secondaryColor;
+      }
+  }
