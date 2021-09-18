@@ -1,20 +1,10 @@
-import { useState, useEffect } from 'react';
-import { useLocation} from 'react-router-dom';
+import { useState } from 'react';
 import './MyStyles.css';
 import img from './assets/FinnMathematical.gif';
-import ReactGA from 'react-ga';
 
-function usePageViews() {
-  let location = useLocation();
-  useEffect(() => {
-    ReactGA.initialize('G-8C69NQYYB8');
-    ReactGA.set({page: location.pathname});
-    ReactGA.pageview(location.pathname);
-  }, [location]);
-}
+
 
 function App() {
-  usePageViews();
   const [p, setP] = useState(58000);
   const [r, setR] = useState(.7);
   const [n, setN] = useState(12);
